@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access to Safe Drinking Water</title>
+
+    <!-- Link to Font Awesome for the water droplet icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* Basic reset for consistent styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling for the navigation bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #007BFF; /* Blue background color */
+            padding: 10px;
+            align-items: center;
+        }
+
+        /* Title styling */
+        .navbar .title {
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Icon and title alignment */
+        .navbar .title i {
+            margin-right: 10px;
+        }
+
+        /* Right-side links styling */
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #ddd;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 50px;
+            display: none;
+        }
+
+        /* Home Section Styling */
+        #home {
+            background-color: #f2f2f2;
+        }
+
+        /* About Section Styling */
+        #about {
+            background-color: #e0f7fa;
+        }
+
+        /* Case Study Section Styling */
+        #case-study {
+            background-color: #ffebee;
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+
+        /* Paragraph styling for spacing */
+        /* p {
+            margin-bottom: 1.5rem;
+        } */
+
+        /* Side headings styling */
+        h3 {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        /* Show sections */
+        .active {
+            display: block;
+        }
+        p {
+    margin-bottom: 1.5rem; /* Space between paragraphs */
+    text-indent: 2em; /* Indent the first line of each paragraph */
+}
+
+ul, ol {
+    margin-left: 2em; /* Indent list items */
+}
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="title">
+            <i class="fas fa-tint"></i> <!-- Water droplet icon -->
+            Access to Safe Drinking Water
+        </div>
+        <div class="nav-links">
+            <a id="nav-home" onclick="showSection('home')">Home</a>
+            <a id="nav-about" onclick="showSection('about')">About</a>
+            <a id="nav-case-study" onclick="showSection('case-study')">Case Study</a>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="active">
+        <h1>Welcome to the Project</h1>
+        <p>
+            Access to safe drinking water is a fundamental human right, yet millions of people worldwide still face challenges in securing clean, potable water. This issue is particularly severe in low-income countries and rural areas, where infrastructure is underdeveloped, and natural water sources are often contaminated.
+        </p>
+        <h3>Why is Water Access Important?</h3>
+        <p>
+            Water is essential for life, but not all water is safe to drink. Contaminated water can lead to deadly waterborne diseases such as cholera and dysentery. In many regions, particularly in low-income countries, access to clean water is limited, and infrastructure is insufficient.
+        </p>
+        <h3>Global Efforts for Water Access</h3>
+        <p>
+            Various international organizations and governments are making efforts to provide access to safe drinking water. Technologies like rainwater harvesting, filtration systems, and water safety plans are being implemented to ensure water safety. 
+        </p>
+        <h3>Challenges Ahead</h3>
+        <p>
+            Despite these efforts, financial constraints, political instability, and lack of community involvement are hindering long-term success. Additionally, climate change and population growth are further stressing limited water resources. 
+        </p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About the Project</h2>
+        <h3>Overview</h3>
+        <p>
+            This project was initiated to address the issues surrounding access to safe drinking water in Damaramadugu village, located in Buchireddypalem Mandal, Nellore District. This community relies heavily on groundwater and seasonal rainfall, both of which are insufficient and often contaminated.
+        </p>
+        <h3>Project Objectives</h3>
+        <p>
+            The main objectives of the project are to implement modern water purification techniques, educate the community on water safety protocols, and improve sanitation and hygiene practices. The project also aims to engage local governments to support the sustainable management of water resources.
+        </p>
+        <h3>Community Challenges</h3>
+        <p>
+            The community in Damaramadugu faces several challenges, including water scarcity during dry seasons, contamination of water due to poor sanitation, and limited infrastructure. Many of the households depend on untreated water, leading to the spread of waterborne diseases.
+        </p>
+        <h3>Long-term Goals</h3>
+        <p>
+            The project aims to establish a sustainable water management system, reduce water-related health issues, and promote community involvement in maintaining safe drinking water practices.
+        </p>
+    </section>
+
+    <!-- Case Study Section -->
+    <!-- Case Study Section -->
+    <section id="case-study">
+        <h2>Case Study: Access to Safe Drinking Water</h2>
+        
+        <h3>Introduction</h3>
+        <p>
+            Access to safe drinking water is a fundamental aspect of public health and sustainable development. This case study aims to investigate the effectiveness and implementation of water access solutions among communities in Damaramadugu village. Through comprehensive surveys and in-depth questionnaires, we explored residents' experiences, challenges, and insights related to water access.
+        </p>
+    
+        <h3>Research Objectives</h3>
+        <p>The primary objectives of this case study were to:</p>
+        <ul>
+            <li>Assess the current practices of water access and usage among local residents.</li>
+            <li>Identify the benefits associated with improved water access, including health outcomes and quality of life.</li>
+            <li>Evaluate the challenges faced by communities in securing safe drinking water.</li>
+            <li>Provide recommendations for enhancing water access strategies based on survey findings.</li>
+        </ul>
+    
+        <h3>Methodology</h3>
+        <p>
+            To gain a comprehensive understanding of water access issues, we conducted a survey involving 50 participants from Damaramadugu village. The survey methodology included:
+        </p>
+        <ul>
+            <li><strong>Surveys and Questionnaires:</strong> We developed a structured questionnaire that covered various aspects of water access, including sources of water, perceived safety, and challenges faced.</li>
+            <li><strong>Interviews:</strong> Follow-up interviews were conducted with select participants to gather qualitative data and deeper insights into their experiences with water access.</li>
+            <li><strong>Photographic Documentation:</strong> We took photographs of water sources and community members to visually represent the challenges and solutions discussed in the study.</li>
+        </ul>
+        <p>
+            The survey was designed to be both quantitative and qualitative, allowing us to gather robust data while also capturing personal anecdotes and perspectives from the community members.
+        </p>
+    
+        <h3>Survey Results</h3>
+        <p>
+            The analysis of survey responses revealed several key findings that highlight the significance of access to safe drinking water:
+        </p>
+        <ol>
+            <li><strong>Improved Health Outcomes:</strong> A substantial 85% of respondents reported a decrease in waterborne illnesses since improving their access to safe drinking water.</li>
+            <li><strong>Increased Community Awareness:</strong> Approximately 90% stated that community education on water safety practices has improved overall health and hygiene.</li>
+            <li><strong>Challenges Faced:</strong> Despite the benefits, 70% of participants expressed challenges in accessing safe drinking water, including:</li>
+            <ul>
+                <li>Inadequate infrastructure for water distribution.</li>
+                <li>Lack of financial resources for water purification systems.</li>
+                <li>Seasonal water shortages affecting availability.</li>
+            </ul>
+        </ol>
+    
+        <h3>Case Study Highlights</h3>
+        <p>
+            Throughout our interactions, several community members shared compelling stories about their experiences with water access. For instance:
+        </p>
+        <blockquote>
+            "Since we started using the new water filtration system, our family's health has improved significantly. We no longer worry about the illnesses that used to plague us!"<br>
+            <strong>Community Member: Lakshmi</strong><br>
+            Location: Damaramadugu
+        </blockquote>
+        <p>
+            These testimonials underscore the transformative impact of improving access to safe drinking water on the health and well-being of community members.
+        </p>
+    
+        <h3>Photographic Evidence</h3>
+        <p>
+            Below are images captured during our survey, highlighting the challenges and solutions related to access to safe drinking water in Damaramadugu:
+        </p>
+        <img src="image1.jpeg" alt="image1" style="width: 600px; height: 600px; padding: 20px 20px 20px 80px; margin-left: 300px;">
+        <img src="image2.jpeg" alt="image2" style="width: 600px; height: 600px; padding: 20px 20px 20px 80px; margin-left: 300px;">
+        <img src="image3.jpeg" alt="image3" style="width: 600px; height: 650px; padding: 20px 20px 20px 80px;margin-left: 300px;">
+        <img src="image4.jpeg" alt="image4" style="width: 600px; height: 490px; padding: 20px 20px 20px 80px;margin-left: 300px;">
+
+        <!-- Add more images as needed -->
+
+        <h3>Conclusion and Recommendations</h3>
+    <p>
+        In conclusion, the findings of this case study demonstrate the critical importance of access to safe drinking water in enhancing the overall health and quality of life in Damaramadugu village. The community's efforts to adopt water purification techniques and increase awareness about water safety have led to significant improvements in health outcomes. However, challenges remain, particularly in infrastructure and resource availability.
+    </p>
+    <p>
+        Based on the insights gained, the following recommendations are made:
+    </p>
+    <ul>
+        <li><strong>Enhance Infrastructure:</strong> Investment in water distribution systems is crucial to ensure that all residents have consistent access to safe drinking water.</li>
+        <li><strong>Community Training Programs:</strong> Continued education on water purification methods and hygiene practices can empower residents to maintain health improvements.</li>
+        <li><strong>Engage Local Authorities:</strong> Collaboration with local governments can help secure funding and support for sustainable water management practices.</li>
+        <li><strong>Implement Rainwater Harvesting:</strong> Exploring rainwater harvesting systems can provide alternative sources of water, especially during dry seasons.</li>
+    </ul>
+    <p>
+        By addressing these recommendations, the community can work towards sustainable solutions for water access, ensuring that safe drinking water is available for all.
+    </p>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <img src="collegelogo.jpeg" alt="Geethanjali Institute of Science & Technology Logo" style="height: 50px; margin-right: 10px;">
+        <p>Geethanjali Institute of Science & Technology</p>
+        <p>&copy; 2024 Access to Safe Drinking Water. All rights reserved.</p>
+    </div>
+
+    <!-- JavaScript to handle navigation -->
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show the selected section
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        // Set Home as the default visible section when the page loads
+        document.getElementById('home').classList.add('active');
+    </script>
+</body>
+</html>
